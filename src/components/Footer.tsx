@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Instagram, Facebook, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
-import { seoLandingPages } from "@/data/seoContent";
+import { blogArticles, seoLandingPages } from "@/data/seoContent";
 
 const Footer = () => {
   return (
@@ -66,6 +66,9 @@ const Footer = () => {
             <a href="#location" className="text-cream/60 hover:text-cream transition-colors">
               Location
             </a>
+            <Link to="/blog" className="text-cream/60 hover:text-cream transition-colors">
+              Blog
+            </Link>
             <a href="#reservations" className="text-cream/60 hover:text-cream transition-colors">
               Reservations
             </a>
@@ -81,6 +84,11 @@ const Footer = () => {
             <Link to="/local-seo-strategy" className="hover:text-cream transition-colors">
               Local SEO Strategy
             </Link>
+            {blogArticles.slice(0, 6).map((blog) => (
+              <Link key={blog.slug} to={`/blog/${blog.slug}`} className="hover:text-cream transition-colors">
+                {blog.title}
+              </Link>
+            ))}
           </div>
 
           <div className="w-24 h-px bg-cream/20 mx-auto mb-8" />
