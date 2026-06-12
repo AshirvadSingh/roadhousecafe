@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Instagram, Facebook, Twitter } from "lucide-react";
+import { Link } from "react-router-dom";
+import { seoLandingPages } from "@/data/seoContent";
 
 const Footer = () => {
   return (
@@ -70,6 +72,17 @@ const Footer = () => {
           </div>
           
           {/* Divider */}
+          <div className="grid md:grid-cols-3 gap-3 mb-10 text-xs font-sans text-cream/60">
+            {seoLandingPages.slice(0, 15).map((page) => (
+              <Link key={page.slug} to={`/${page.slug}`} className="hover:text-cream transition-colors">
+                {page.title}
+              </Link>
+            ))}
+            <Link to="/local-seo-strategy" className="hover:text-cream transition-colors">
+              Local SEO Strategy
+            </Link>
+          </div>
+
           <div className="w-24 h-px bg-cream/20 mx-auto mb-8" />
           
           {/* Copyright */}
