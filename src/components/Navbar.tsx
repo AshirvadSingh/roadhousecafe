@@ -8,6 +8,7 @@ import logo from "@/assets/redlogo.png";
 const navLinks = [
   { label: "About", href: "/#about" },
   { label: "Menu", href: "/menu" },
+  { label: "Blog", href: "/blog" },
   { label: "Gallery", href: "/#gallery" },
   { label: "Reviews", href: "/#testimonials" },
   { label: "Contact", href: "/#contact" },
