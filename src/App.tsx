@@ -8,6 +8,8 @@ import Index from "./pages/Index";
 import Menu from "./pages/Menu";
 import NotFound from "./pages/NotFound";
 import PageTransition from "./components/PageTransition";
+import SeoLandingPage from "./pages/SeoLandingPage";
+import SeoStrategy from "./pages/SeoStrategy";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +21,8 @@ const AnimatedRoutes = () => {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<PageTransition><Index /></PageTransition>} />
         <Route path="/menu" element={<PageTransition><Menu /></PageTransition>} />
+        <Route path="/local-seo-strategy" element={<PageTransition><SeoStrategy /></PageTransition>} />
+        <Route path="/:slug" element={<PageTransition><SeoLandingPage /></PageTransition>} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
       </Routes>
