@@ -14,6 +14,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import LocationSection from "@/components/LocationSection";
 import ContactSection from "@/components/ContactSection";
 import VideoCTASection from "@/components/VideoCTASection";
+import HomeSeoLinksSection from "@/components/HomeSeoLinksSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -54,6 +55,7 @@ const Index = () => {
           <TestimonialsSection />
           <LocationSection />
           <ContactSection />
+          <HomeSeoLinksSection />
           <Footer />
         </main>
       )}

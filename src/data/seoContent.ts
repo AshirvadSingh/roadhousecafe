@@ -177,7 +177,7 @@ export const internalLinkStructure = [
   { page: "Contact", linksTo: ["Birthday Party Venue Greater Noida", "Corporate Party Venue Greater Noida", "Weekend Party Place Greater Noida"] },
 ];
 
-export const sitemapStructure = ["/sitemap.xml", "/page-sitemap.xml", "/location-sitemap.xml", "/blog-sitemap.xml", "/menu-sitemap.xml", "/gallery-sitemap.xml"];
+export const sitemapStructure = ["/sitemap.xml"];
 export const gbpPosts = Array.from({ length: 30 }, (_, i) => `GBP Post ${i + 1}: Highlight ${backlinkKeywords[i % backlinkKeywords.length]} with a photo, a short local caption, and a call to book a table at Road House Café & Bar near Delta 1 Metro, Greater Noida.`);
 export const reviewReplies = Array.from({ length: 30 }, (_, i) => `Thank you for visiting Road House Café & Bar in Greater Noida. We are glad you enjoyed the ${backlinkKeywords[i % backlinkKeywords.length]} experience and hope to host you again soon near Delta 1 Metro.`);
 export const qnaSuggestions = Array.from({ length: 30 }, (_, i) => ({ question: `Q${i + 1}: Do you offer ${backlinkKeywords[i % backlinkKeywords.length]} at Road House Café & Bar?`, answer: `Yes. Road House Café & Bar offers a cafe, restaurant and bar experience in Greater Noida with food, drinks, rooftop seating and event-friendly hospitality. Call ${businessInfo.phone} for current details.` }));
